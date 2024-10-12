@@ -1,0 +1,143 @@
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://example.com/virat-kohli-bg.jpg'); /* Use a dynamic cricket or Virat Kohli image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Container Styling */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9); /* Transparent white for better readability */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #00BFFF; /* A sporty bright blue */
+}
+
+.highlight {
+  color: #FFD700; /* Gold for Virat Kohli */
+}
+
+/* Input and Button Styling */
+#todo-container, #goal-container, #nutrition-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 12px;
+  border: 2px solid #333;
+  border-radius: 8px;
+}
+
+button {
+  padding: 12px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#add-btn {
+  background-color: #FF4500; /* Vibrant red-orange for energy */
+}
+
+#add-goal-btn {
+  background-color: #32CD32; /* Athletic green */
+}
+
+#add-nutrition-btn {
+  background-color: #1E90FF; /* Hydration blue */
+}
+
+/* Task Columns */
+.list-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.task-column, .goal-column, .nutrition-column {
+  width: 30%;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #4B0082;
+  border-radius: 10px;
+}
+
+.task-column h3, .goal-column h3, .nutrition-column h3 {
+  text-align: center;
+  color: #4B0082;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F0F8FF; /* Light sports blue */
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.delete-btn {
+  background-color: #FF6347;
+  border: none;
+  border-radius: 5px;
+  padding: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Motivational Quote */
+#quote-container {
+  margin-top: 30px;
+  font-style: italic;
+  text-align: center;
+  color: #00BFFF;
+  font-size: 1.2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .container {
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .list-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .task-column, .goal-column, .nutrition-column {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  input[type="text"], button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

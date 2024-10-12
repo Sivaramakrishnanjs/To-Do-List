@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virat Kohli Athlete To-Do List</title>
+  <link rel="stylesheet" href="virat.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Virat <span class="highlight">Kohli</span> Athlete To-Do List</h1>
+    <div id="todo-container">
+      <input type="text" id="todo-input" placeholder="Add a new task">
+      <button id="add-btn"><i class="fas fa-plus"></i> Add Task</button>
+    </div>
+
+    <div id="goal-container">
+      <input type="text" id="goal-input" placeholder="Set an athletic goal">
+      <button id="add-goal-btn"><i class="fas fa-bullseye"></i> Add Goal</button>
+    </div>
+
+    <div id="nutrition-container">
+      <input type="text" id="nutrition-input" placeholder="Log your meal or hydration">
+      <button id="add-nutrition-btn"><i class="fas fa-carrot"></i> Log Nutrition</button>
+    </div>
+
+    <div class="list-section">
+      <div class="task-column">
+        <h3>Tasks</h3>
+        <ul id="todo-list"></ul>
+      </div>
+      <div class="goal-column">
+        <h3>Goals</h3>
+        <ul id="goal-list"></ul>
+      </div>
+      <div class="nutrition-column">
+        <h3>Nutrition Logs</h3>
+        <ul id="nutrition-list"></ul>
+      </div>
+    </div>
+
+    <div id="quote-container">
+      <p id="motivational-quote">Loading motivational quote...</p>
+    </div>
+  </div>
+
+  <script src="virat.js"></script>
+</body>
+
+</html>
